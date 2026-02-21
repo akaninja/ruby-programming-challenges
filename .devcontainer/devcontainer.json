@@ -1,0 +1,11 @@
+{
+  "name": "superdoc-challenges",
+  "dockerComposeFile": "compose.yaml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "remoteUser": "vscode",
+  "mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+  ],
+    "postCreateCommand": "sudo apt-get update && bin/setup && chmod 700 /root/.ssh && chmod 600 /root/.ssh/*"
+}
