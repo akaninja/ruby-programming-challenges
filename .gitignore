@@ -1,0 +1,19 @@
+# Dependencies and Bundle
+/.bundle
+/vendor/bundle
+
+# Database
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Logs and Temp
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Documentation and Environment
+/.yardoc/
+/doc/
+.byebug_history
+.env
